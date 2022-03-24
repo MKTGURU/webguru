@@ -1,22 +1,99 @@
-<!doctype html>
-
+<!DOCTYPE HTML>
 <html>
-<head>
-    <title>WEB1-html</title>
-    <meta charset="utf-8">
-</head>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <style>
+            h1{
+                font-size: 50px;
+                margin: 0px;
+                text-align: center;
+                border-bottom: 5px solid blue;
+                padding: 30px;
+            }
+            #menu{
+                padding-left: 60px;
+                padding-top: 30px;
+            }
+            .now{
+                color: black;
+                font-weight: 1400;
+                line-height: 40px;
+                text-decoration: overline;
+            }
+            .saw{
+                color: grey;
+                text-decoration: none;
+                font-weight: 400;
+                line-height: 40px;
+            }
+            #web{
+                color: black;
+                text-decoration: none;
+            }
+            ol {
+                border-right: 5px solid gray;
+                width: 100px;
+                margin: 0px;
+                padding-right: 50px;
+                padding-top: 30px;
+                padding-left: 50px;
+                padding-bottom: 800px;
+            }
+            #grid{
+                display: grid;
+                grid-template-columns: 1fr 7fr;
+            }
+            #article {
+                padding-left: 60px;
+                padding-top: 30px;
+            }
+            #article p{
+                line-height: 35px;
+                display: table-cell;
+                vertical-align: middle;
+                padding-left: 30px;
+            }
 
-<body>
-    <h1<a href="index.html">WEB</a></h1>
-<ol>
-    <li><a href="1.html">html</a></li>
-    <li><a href="2.html">css</a></li>
-    <li><a href="3.html">javascript</a></li>
-</ol>
-<h2>HTML</h2>
+        </style>
+    </head>
+    <body>
 
-<h1><a href="https://www.w3.org/TR/2011/WD-html5-20110405/"
-    target="_blank" title="뭐튀어나옴">HTML이란 무엇인가</a></h1>>
+        <h1><a href="index.html" id="web">WEB</a></h1>
+        
+    <div id="grid">
 
-</body>
+        <div>
+        <h2 id="menu">Menu</h2>
+        <ol> 
+        <h3>
+            <li><a href="1.html" class="saw">HTML</a></li>
+            <li><a href="2.html" class="saw">CSS</a></li>
+            <li><a href="3.html" class="now">JAVASCRIPT</a></li>
+        </h3>
+        </ol>
+        </div>
+        
+        <div id="article">
+            <h2>
+                Javascript란 무엇인가
+            </h2>
+            <br>
+            <span>
+                <span>
+                    <img src="https://cdn.drawception.com/images/panels/2016/4-3/ASkFeGMD8n-2.png">
+                </span>
+                <span>
+            <p class="art">자바스크립트를 얼핏 보면 자바와 비슷해보인다. 
+                <br>하지만 자바와 자바스크립트의 관계는 햄스터와 햄의 관계다. 
+                <br>또라이들은 햄스터로 햄을 만들 수 있지 않나? 하고 생각할지 모르겠다.
+                <br> 그래도 문맥상 <strong>발음은 일치하나 뜻은 전혀 다른</strong> 언어임을 알 수 있다.
+            </p>
+        </span>
+        </span>
+        </div>    
+        
+    </div>
+
+    </body>
 </html>
