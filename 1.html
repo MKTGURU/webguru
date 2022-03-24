@@ -1,51 +1,99 @@
-<!doctype html>
-
+<!DOCTYPE HTML>
 <html>
-<head>
-    <title>WEB</title>
-    <meta charset="utf-8">
-</head>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <style>
+            h1{
+                font-size: 50px;
+                margin: 0px;
+                text-align: center;
+                border-bottom: 5px solid blue;
+                padding: 30px;
+            }
+            #menu{
+                padding-left: 60px;
+                padding-top: 30px;
+            }
+            .now{
+                color: black;
+                font-weight: 1400;
+                line-height: 40px;
+                text-decoration: overline;
+            }
+            .saw{
+                color: grey;
+                text-decoration: none;
+                font-weight: 400;
+                line-height: 40px;
+            }
+            #web{
+                color: black;
+                text-decoration: none;
+            }
+            ol {
+                border-right: 5px solid gray;
+                width: 100px;
+                margin: 0px;
+                padding-right: 50px;
+                padding-top: 30px;
+                padding-left: 50px;
+                padding-bottom: 800px;
+            }
+            #grid{
+                display: grid;
+                grid-template-columns: 1fr 7fr;
+            }
+            #article {
+                padding-left: 60px;
+                padding-top: 30px;
+            }
+            #article p{
+                line-height: 35px;
+                padding-left: 30px;
+                display: table-cell;
+                vertical-align:middle;
+            }
 
-<body>
-    <h1><a href="index.html">이형규의 WEB 공부</a></h1>
-<ol>
-    <li><a href="1.html">html</a></li>
-    <li><a href="2.html">css</a></li>
-    <li><a href="3.html">javascript</a></li>
-</ol>
+        </style>
+    </head>
+    <body>
 
-<h2>HTML</h2>
+        <h1><a href="index.html" id="web">WEB</a></h1>
+        
+    <div id="grid">
 
+        <div>
+        <h2 id="menu">Menu</h2>
+        <ol> 
+        <h3>
+            <li><a href="1.html" class="now">HTML</a></li>
+            <li><a href="2.html" class="saw">CSS</a></li>
+            <li><a href="3.html" class="saw">JAVASCRIPT</a></li>
+        </h3>
+        </ol>
+        </div>
+        
+        <div id="article">
+            <h2>
+                HTML이란 무엇인가
+            </h2>
+            <br>
+            <span class="img"> 
+            <span>
+            <img src="https://i.dailymail.co.uk/i/pix/2012/07/11/article-0-140519E7000005DC-502_634x450.jpg" width="400px">
+            </span>
+            <span>
+            <p class="p">
+                H: Hetero <br>
+                T: Tyranosaurus are<br>
+                M: Making <br>
+                L: Love 
+            </p>
+            </span>
+        </div>    
+        
+    </div>
 
-<div id="disqus_thread"></div>
-<script>
-    (function() { // DON'T EDIT BELOW THIS LINE
-    var d = document, s = d.createElement('script');
-    s.src = 'https://piribu.disqus.com/embed.js';
-    s.setAttribute('data-timestamp', +new Date());
-    (d.head || d.body).appendChild(s);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-
-    
-<h1><a href="https://www.w3.org/TR/2011/WD-html5-20110405/"
-    target="_blank" title="뭐튀어나옴">링크, 앵커텍스트</a></h1>>
-<p>a는 링크인데 a href=""요런 식으로 씀</p> 
-<p>링크 눌렀을 때 새 페이지 열려면 target="_blank", title=으로 뭐 튀어나오게 </p>
-
-<u>간단한</u><strong>표현법</strong>은 생략
-
-<h2>혹시 br과 p의 차이를 아시는가?</h2>
-p는 단락 만들기 br는 강제 줄바꿈
-<br>p는<p>단락</p>만들기<br>
-br은<br>강제줄바꿈
-<p style="margin-top:40px;">p는 열고 닫아줘야됨, style="마진탑00px;"로 간격조절</p>
-
-<h1>수고했다</h1>
-<h2>수고했다</h2>
-<h3>수고했다</h3>
-<h4>수고했다</h4>
-<h5>수고했다</h5>
-</body>
+    </body>
 </html>
