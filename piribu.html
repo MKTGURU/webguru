@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <title>piribu sample</title>
+
+        <style>
+        @media (max-width:600px){
+                .contents:nth-child(1){
+                    display: none;
+                }
+                .contents:nth-child(2){
+                    width: 1fr;
+                }
+                .contents:nth-child(3){
+                    display: none;
+                }
+            }
+        h1{
+        text-align: center;
+        font-size: 50px;
+        }
+        .menu{
+            display: grid;
+            border: 5px solid blue;
+            height: 30px;
+            grid-template-columns: repeat(6, 1fr);
+        }
+        .option{
+            text-align: center;
+            text-decoration: double;
+
+        }
+        .middle{
+            display: grid;
+            grid-template-columns: 1fr 600px 1fr;
+            text-align: center;
+        }
+        .contents{
+        border: 3px solid grey;
+        height: 800px;
+        }
+        </style>
+
+    </head>
+
+    <body>
+        <h1>Piribu</h1>
+
+    <div class="menu">
+        <div class="option"></div>
+        <div class="option">HTML</div>
+        <div class="option">CSS</div>
+        <div class="option">JAVASCRIPT</div>
+        <div class="option">ETC</div>
+        <div class="option"></div>
+    </div>
+
+    <div class="middle">
+        
+        <div class="contents" class="left">
+            boxbox
+        </div>
+        
+        <div class="contents" class="center">
+            <input type="button" value="night" onclick="
+            document.querySelector('body').style.backgroundColor = 'black';
+            document.querySelector('body').style.color = 'white';
+            ">
+            <input type="button" value="day" onclick="
+            document.querySelector('body').style.backgroundColor = 'white';
+            document.querySelector('body').style.color = 'black';
+            ">
+        </div>
+
+        <div class="contents" class="rigth">
+            <input type="text" value="기본값" onchange="alert('왜바꿈')">
+            <input type="text" onkeydown="alert('이게뭐노')">
+        </div>
+
+    </div>
+
+        <script>
+            document.write('hello world');
+        </script>
+        <input type="button" value="hi" onclick="alert('hi')">
+
+    </body>
+
+</html>
