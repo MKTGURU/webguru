@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="키워드, 저자" content="키워드, 저자의 내용">
+
+    <title>doit</title>
+    <style>
+        h1{
+            border-bottom: 3px solid gray;
+        }
+        .date{
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+<h1 >프런트엔드 웹 개발</h1>
+
+<form>
+    <fieldset>
+        <ul>
+            <li>
+                <label for="3k"><input type="checkbox" id="3k">선물용 3kg</label>
+                <input type="range" value="3" min="0" max="5">개 (최대 5개) 
+            </li>
+            <li>
+                <label for="5k"><input type="checkbox" id="5k">선물용 5kg</label>
+                <input type="range" min="0" max="3">개 (최대 3개) 
+                
+            </li>
+        </ul>
+        <h4>배송날짜</h4>
+    </fieldset>
+    <input type="week">
+
+</form>
+
+<form>
+    <fieldset>
+        <legend>상품선택</legend>
+        <p><b>주문할 상품을 선택해주세요</b></p>
+        <label><input type="checkbox" value="5kg">5kg</label>       
+        <label><input type="checkbox" value="3kg">3kg</label>        
+        <label><input type="checkbox" value="1kg">1kg</label>        
+        <p><b>포장 선택</b></p>        
+        <label><input type="radio" name="pack">묶음배송</label>
+        <label><input type="radio" name="pack">개별배송</label>
+    </fieldset>
+    <fieldset>
+        <legend>상품선택 드롭다운</legend>
+        <label for="drop">상품선택</label>
+        <select size="1" id="drop">
+            <option value="데이터1">기본 3kg</option>
+            <option value="데이터2">기본 5kg</option>
+            <option value="데이터3">선물 3kg</option>
+            <option value="데이터4">선물 5kg</option>
+            <option value="데이터5">어쩌라고</option>
+        </select>
+    </fieldset>
+</form>
+
+<form>
+    <fieldset>
+        <label>아이디: <input type="text" id="userid" size="5"></label>
+        <label>비밀번호: <input type="password" id="userpw" size="5" placeholder="숫자만"></label>
+        <input type="submit" value="로그인">
+    </fieldset>
+</form>
+<form>
+    <fieldset>
+        <legend>사용자 정보</legend>
+        <h3>회원가입 환영</h3>
+        <ul>
+            <li><label for="id">아이디<input type="text" id="id" min="4" max="8" placeholder="공백없이 4~8자" autofocus></label></li>
+            <li><label for="ema">이메일<input type="email" id="ema" required></label></li>
+            <li><label for="pw">비밀번호<input type="password" id="pw" placeholder="문자, 숫자, 특수기호 포함"></label></li>
+            <li><label for="pwcf">비밀번호 확인<input type="password" id="pwcf"></label></li>
+        </ul>
+    </fieldset>
+    <fieldset>
+        <legend>이벤트와 새로운 소식</legend>
+        <label for="emaok">이메일 수신<input type="radio" id="emaok" name="emaill"></label>
+        <label for="emano">이메일 수신 거부<input type="radio" id="emano" name="emaill"></label>
+    </fieldset>
+    <input type="submit" value="가입하기">
+    <input type="submit" value="취소">
+</form>
+<table class="">
+    <caption>표 제목</caption>
+    <tr>
+        <td>1행 1열</td>
+        <td>1행 2열</td>
+    </tr>
+    <tr>
+        <td>2행 1열</td>
+        <td>2행 2열</td>
+    </tr>
+    <tr>
+        <td>3행 열</td>
+        <td>3행 열</td>
+    </tr>
+</table>
+
+<form autocomplete="off" action="" method="post">
+    <fieldset>
+        <legend>방역에 최선을</legend>
+    </fieldset>
+    <br>
+    <fieldset>
+        <legend>다하고 있나요</legend>
+    </fieldset>    
+    <br>
+    <label for="userid">for로 만든 라벨</label>
+    <input type="text" id="userid">
+    <br>
+    <label>아이디(6자이상)<input type="text"></label>
+    <br>
+</form>
+
+<input type="time">
+<input type="range">
+<input type="file">
+<input class="date" type="date">
+
+
+
+</body>
+
+</html>
